@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brain Tumor Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Brain Tumor Detection</h2>
+
+    <div class="upload-box" id="drop-area">
+        <p>Drag & Drop MRI Image Here</p>
+        <p>or</p>
+        <input type="file" id="fileInput" accept="image/*">
+    </div>
+
+    <img id="previewImage" class="preview hidden">
+
+    <button id="predictBtn" class="btn hidden">Predict</button>
+
+    <div id="result" class="result hidden">
+        <h3>Prediction Result</h3>
+        <p id="predictionText"></p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
